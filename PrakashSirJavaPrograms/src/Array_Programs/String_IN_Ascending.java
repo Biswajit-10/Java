@@ -13,7 +13,6 @@ public class String_IN_Ascending {
 		for (String string : set) {
 			System.out.println(string);
 		}
-		System.out.println("hello".compareTo("milu"));
 	}
 }
 class Ascending{

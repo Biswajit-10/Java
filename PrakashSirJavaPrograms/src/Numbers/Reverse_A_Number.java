@@ -9,6 +9,7 @@ public class Reverse_A_Number {
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter a no ");
 		int a=s.nextInt();
+		s.close();
 		int rev=0;
 
 		while(a>0)

@@ -35,3 +35,20 @@ class With{
 		}
 	}
 }
+class Sort_String_IN_Descending_LengthWise {
+	
+	public static void main(String[] args) {
+		
+		String[] s= {"Hello","This","Is","b","Java","Program","a"};
+		for(int i=0;i<s.length;i++) {
+			for(int j=i+1;j<s.length;j++) {
+				if(s[i].length()<s[j].length()) {
+					String temp=s[i];
+					s[i]=s[j];
+					s[j]=temp;
+				}
+			}
+			System.out.println(s[i]);
+		}
+	}
+}

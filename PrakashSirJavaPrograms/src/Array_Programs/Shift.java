@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Shift {
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		int key=1;
 		int[] a= {30,10,40,60,20,50,70,80};
 		int temp=a[0];
@@ -30,5 +31,6 @@ class Shift2 {
 		a[a.length-1]=temp;
 	}	
 		System.out.println(Arrays.toString(a));
+		sc.close();
 	}
 }

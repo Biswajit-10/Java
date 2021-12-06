@@ -53,6 +53,7 @@ class Add_3_Given_Array {
 		int[] a= {30,10,40,60,20};
 		int[] b= {30,10,40,60,20,50,70,80};
 		int[] c= {30,10,40};
+		@SuppressWarnings("unused")
 		int count=a.length;
 		int maxLength=a.length>b.length?(a.length>c.length?a.length:c.length):(b.length>c.length?b.length:c.length);
 		System.out.println(maxLength);
