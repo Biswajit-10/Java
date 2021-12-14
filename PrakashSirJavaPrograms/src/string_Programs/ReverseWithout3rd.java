@@ -33,6 +33,7 @@ class Reverse_Without_using_Length_Method{
 	}
 }
 class Reverse2 {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		String s="tyss";
 		char[] ch = s.toCharArray();

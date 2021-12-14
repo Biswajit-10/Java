@@ -17,9 +17,8 @@ public class Reverse_A_Number {
 			int d= a%10;
 			rev=rev*10+d;
 			a=a/10;
-			System.out.println(rev);
 		}
-		//System.out.println(rev);
+		System.out.println(rev);
 
 	}
 }

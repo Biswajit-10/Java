@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class NumberOfOccuranceOfCharacter {
 	public static void main(String[] args) {
-		String s="ciggarette";
+		String s="chocolate";
 		//step 1:-create set collection and add all the char of given string into set
 		HashSet<Character> h=new HashSet<>();
 		for(int i=0;i<s.length();i++) {
@@ -21,18 +21,19 @@ public class NumberOfOccuranceOfCharacter {
 					count++;
 			}
 		//print both characters and count	
-			System.out.println(character+" is present "+count+" times");
+//			System.out.println(character+" is present "+count+" times");
 			
 			if(count>1) {
 				System.out.println(character+" duplicate");
 			}
-			if(count==1) {
-				System.out.println(character+" unique");
-			}
+//			if(count==1) {
+//				System.out.println(character+" unique");
+//			}
 		}
 	}
 }
 class RemoveDuplicate {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		String s="ciggarette";
 		String s1="";

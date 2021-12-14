@@ -45,3 +45,12 @@ class No_Of_Digits2 {
 		System.out.println(number.length());
 	}
 }
+class No_Of_Digits3 {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a no");
+		String str=s.next();
+		s.close();
+		System.out.println(str.length());
+	}
+}

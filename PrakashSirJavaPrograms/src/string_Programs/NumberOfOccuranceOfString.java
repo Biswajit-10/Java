@@ -45,6 +45,18 @@ class PrintDuplicate {
 		
 	}
 }
+class PrintDuplicate2 {
+	public static void main(String[] args) {
+		String s="Hello this is java class is this java class is";
+		String[] a = s.split(" ");
+		HashSet<String> set=new HashSet<>();
+		for(int i=0;i<a.length;i++) {
+			if(set.add(a[i])==false) {
+				System.out.println(a[i]);
+			}
+		}		
+	}
+}
 class UniqueWord {
 	public static void main(String[] args) {
 		String s="Hello this is java class is this java class";
