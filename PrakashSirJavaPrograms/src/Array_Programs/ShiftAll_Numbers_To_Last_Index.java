@@ -1,6 +1,5 @@
 package Array_Programs;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 
 public class ShiftAll_Numbers_To_Last_Index {
@@ -19,13 +18,4 @@ public class ShiftAll_Numbers_To_Last_Index {
 		System.out.println(Arrays.toString(b));
 	}
 
-}
-class TomorrowDate{
-	public static void main(String[] args) {
-		
-		LocalDate date = LocalDate.now().plusDays(1);
-		System.out.println(date);
-		
-		System.out.println(date.getDayOfWeek());
-	}
 }
