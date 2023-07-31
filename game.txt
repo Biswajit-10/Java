@@ -1,0 +1,95 @@
+public class TicTacToe {
+
+	static List<Integer> list=new ArrayList<>();
+
+	public static void main(String[] args) {
+		char[][] gameBoard= {{' ','|',' ','|',' '},{'-',' ','-',' ','-'},{' ','|',' ','|',' '},{'-',' ','-',' ','-'},{' ','|',' ','|',' '}};
+			while(true) {
+			takeUserInput(gameBoard,"human");			
+			takeUserInput(gameBoard,"cpu");			
+			printGameBoard(gameBoard);
+			}
+	}
+	
+	public static void takeUserInput(char[][] gameBoard,String user){
+		int position=0;
+		
+		char ch=' ';
+		if(user.equalsIgnoreCase("human")) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("please give a number input");
+			position=sc.nextInt();
+			ch='X';	
+			while(true) {
+				if (!list.contains(position)) {
+					list.add(position);	
+					break;
+				}
+				else {
+					System.out.println("number is taken...give other input...");
+					position=sc.nextInt();
+				}
+			}
+		}
+		else {
+			ch='O';	
+			Random random=new Random();
+			position=random.nextInt(9);
+			while(true) {
+				if (!list.contains(position)) {
+					list.add(position);	
+					break;
+				}
+				else {
+//					System.out.println("number is taken...give other input...");
+					position=random.nextInt(9);
+				}
+			}
+		}
+
+		switch(position) {
+			case 1:
+				gameBoard[0][0]=ch;
+				break;
+			case 2:
+				gameBoard[0][2]=ch;
+				break;
+			case 3:
+				gameBoard[0][4]=ch;
+				break;
+			case 4:
+				gameBoard[2][0]=ch;
+				break;
+			case 5:
+				gameBoard[2][2]=ch;
+				break;
+			case 6:
+				gameBoard[2][4]=ch;
+				break;
+			case 7:
+				gameBoard[4][0]=ch;
+				break;
+			case 8:
+				gameBoard[4][2]=ch;
+				break;
+			case 9:
+				gameBoard[4][4]=ch;
+				break;
+			default:
+				break;
+		}
+	}
+	
+	public static void printGameBoard(char[][] gameBoard) {
+		for (char[] cs : gameBoard) {
+			for (char ch : cs) {
+				System.out.print(ch);
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void successScenario() {
+		
+	}
+}
