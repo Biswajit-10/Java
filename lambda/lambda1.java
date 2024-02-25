@@ -6,13 +6,16 @@ public class lambda1 {
         int width=10;  
   
         //without lambda, Drawable implementation using anonymous class  
-        Drawable d=new Drawable(){  
-            public void draw(){System.out.println("Drawing "+width);}  
+        Drawable d=new Drawable(){
+            public void draw(){System.out.println("Drawing "+width+" shapes");}  
         };  
-        d.draw();  
+        d.draw();
+        
+        Drawable drawable=()->System.out.println("Drawable");
+        drawable.draw();
     }  
 }
-
+@FunctionalInterface
 interface Drawable{  
     public void draw();  
 }  

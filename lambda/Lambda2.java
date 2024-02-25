@@ -29,14 +29,17 @@ public class Lambda2 {
 	}
 }
 
+@FunctionalInterface
 interface MathOperation{
 	 int operation(int n1,int n2);
 }
 
+@FunctionalInterface
 interface NumberChecker{
 	boolean check(int a);
-}
-	
+}	
+
+@FunctionalInterface
 interface ArrayProcessor{
 		int process(int[] a);
 }

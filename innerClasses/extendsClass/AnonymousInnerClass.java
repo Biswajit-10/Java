@@ -1,4 +1,4 @@
-package innerClasses;
+package innerClasses.extendsClass;
 
 public class AnonymousInnerClass {
 	
